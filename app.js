@@ -35,7 +35,7 @@
 
         const articleRequest = new XMLHttpRequest();
         articleRequest.onload = addArticles;
-        articleRequest.open('GET', `http://api.nytimes.com/svc/search/v2/articlesearch.json?q=${searchedForText}&api-key=84769d8f2a284e4eb474fa4f82311714`);
+        articleRequest.open('GET', `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${searchedForText}&api-key=84769d8f2a284e4eb474fa4f82311714`);
         articleRequest.send();
 
         function addArticles() {
